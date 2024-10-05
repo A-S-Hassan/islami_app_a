@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app_a/home/home_screen.dart';
+import 'package:islami_app_a/splashScreen.dart';
 
 void main(){
   runApp(MyApp());
@@ -12,9 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: {
         HomeScreen.routeName : (context) => HomeScreen(),
+        SplashScreen.routeName : (context) => SplashScreen(),
       },
      );
   }
